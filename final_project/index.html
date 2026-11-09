@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Inventory Management System</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1>Inventory Management System</h1>
+      <p>Manage products, quantities, and available stock.</p>
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <!-- DASHBOARD -->
+    <section class="section">
+      <h2>Inventory Dashboard</h2>
+
+      <div id="dashboard" class="dashboard">
+        <!-- DashboardView renders here -->
+      </div>
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="section">
+      <h2>Search Products</h2>
+
+      <form id="search-form" class="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search product name..."
+          autocomplete="off"
+        />
+      </form>
+    </section>
+
+
+    <!-- PRODUCT FORM -->
+    <section class="section">
+      <h2>Add / Edit Product</h2>
+
+      <form id="product-form" class="product-form">
+        <!-- ProductFormView renders here -->
+      </form>
+    </section>
+
+
+    <!-- PRODUCT LIST -->
+    <section class="section">
+      <div class="section-heading">
+        <h2>Available Products</h2>
+      </div>
+
+      <ul id="product-list" class="product-list">
+        <!-- ProductListView renders here -->
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>Inventory Management System &copy; 2026</p>
+  </footer>
+
+
+  <script type="module" src="./js/controller.js"></script>
+
+</body>
+</html>
